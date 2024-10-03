@@ -1,0 +1,23 @@
+---
+/* Library imports go here */
+const { title, children } = Astro.props;
+/* Javascript that run "server-side" when we build go here */
+
+import "../scripts/main.js";
+---
+
+<!-- HTML Code goes here w/ "Astro" templating in curly brackets --><!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initialScale=1.0" />
+    <script src="../scripts/main.js"></script>
+    <title>
+      {title}
+    </title>
+    <slot name="head" />
+  </head>
+  <body class="container">
+    <slot />
+  </body>
+</html>
