@@ -1,13 +1,10 @@
-import './hoisted.DofUmjhD.js';
+import './hoisted.pxuoeGGj.js';
+import { g as getDefaultExportFromCjs } from './_commonjsHelpers.BFTU3MAI.js';
 /* empty css                                */
 
 document.addEventListener("DOMContentLoaded", function() {
   $(".accordion").accordion();
 });
-
-function getDefaultExportFromCjs (x) {
-	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;
-}
 
 var glider = {exports: {}};
 
