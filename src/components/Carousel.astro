@@ -1,0 +1,25 @@
+---
+import "glider-js/glider.min.css";
+---
+
+<script>
+  import Glider from "glider-js";
+
+  new Glider(document.querySelector(".glider"), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: ".dots",
+    arrows: {
+      prev: ".glider-prev",
+      next: ".glider-next",
+    },
+  });
+</script>
+<section class="glider-contain">
+  <div class="glider">
+    <slot />
+  </div>
+  <button class="glider-prev">«</button>
+  <button class="glider-next">»</button>
+</section>
