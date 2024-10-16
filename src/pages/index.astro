@@ -43,7 +43,60 @@ import Carousel from "../components/Carousel.astro";
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec
         purus ut nunc ultricies aliquam. Nullam nec purus ut nunc ultricies
         aliquam. Nullam nec purus ut nunc ultricies aliquam.
+      </p>
     </article>
   </Carousel>
-  
+  <article>
+    <div class="accordion">
+      <h2>An example accordion</h2>
+      <div>
+        <p>Accordion content goes here...</p>
+        <p>This stuff will drop down in an accordion which is kind of neat.</p>
+      </div>
+      <h2>A second heading</h2>
+      <div>
+        <p>Accordion content goes here...</p>
+        <p>This stuff will drop down in an accordion which is kind of neat.</p>
+      </div>
+      <h2>A third heading</h2>
+      <div>
+        <p>More accordion content goes here...</p>
+        <p>This stuff will drop down in an accordion which is kind of neat.</p>
+      </div>
+      <h2>A fourth heading</h2>
+      <div>
+        <p>
+          JQuery UI looks pretty dated, doesn't it? JQuery was once the king of
+          JavaScript frameworks and you will still find it out there a lot, but
+          it definitely is on the decline.
+        </p>
+      </div>
+    </div>
+  </article>
 </Page>
+
+<!-- 
+  These script tags and the link could also be added to
+  the head of the document in the Page.astro component.
+  However, we are adding them here to show that you can
+  add scripts to individual pages or components if you
+  want to, which can make it easier to keep track of
+  since you put everything related together.
+-->
+<script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script defer src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link
+  rel="stylesheet"
+  href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+/>
+<script>
+  // Note: we wait for content to load so we know that
+  // the JQuery Libraries have loaded. This is the pattern
+  // you would have to use with any global library imported
+  // from a CDN in a script tag in the head.
+  document.addEventListener("DOMContentLoaded", function () {
+    // Every item with a class="accordion" will be
+    // turned into an accordion.
+    $(".accordion").accordion();
+  });
+</script>
