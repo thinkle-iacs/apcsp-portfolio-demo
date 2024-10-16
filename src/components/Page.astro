@@ -4,6 +4,7 @@ const { title, children } = Astro.props;
 /* Javascript that run "server-side" when we build go here */
 
 import "../scripts/main.js";
+import { Tooltip } from "react-tooltip";
 ---
 
 <!-- HTML Code goes here w/ "Astro" templating in curly brackets --><!doctype html>
@@ -17,7 +18,8 @@ import "../scripts/main.js";
     </title>
     <slot name="head" />
   </head>
-  <body class="container">
+  <body>
     <slot />
   </body>
+  <Tooltip id="tooltip" client:only="react" />
 </html>
