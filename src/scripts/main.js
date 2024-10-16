@@ -1,4 +1,5 @@
 import "../styles/styles.css";
+import "../styles/burger.css";
 import "@picocss/pico/css/pico.blue.css";
 // Add imports here
 

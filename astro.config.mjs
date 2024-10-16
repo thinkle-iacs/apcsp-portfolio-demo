@@ -1,5 +1,7 @@
 import { defineConfig } from "astro/config";
 
+import react from "@astrojs/react";
+
 export default defineConfig({
   vite: {
     build: {
@@ -7,4 +9,6 @@ export default defineConfig({
       base: "https://thinkle-iacs.github.io/apcsp-portfolio-demo/",
     },
   },
+
+  integrations: [react()],
 });

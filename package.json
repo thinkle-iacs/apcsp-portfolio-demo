@@ -12,9 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@astrojs/react": "^3.6.2",
     "@picocss/pico": "^2.0.6",
     "aos": "^2.3.4",
     "astro": "^4.15.9",
-    "glider-js": "^1.7.9"
+    "glider-js": "^1.7.9",
+    "react-burger-menu": "^3.0.9",
+    "react-tooltip": "^5.28.0"
   }
 }
